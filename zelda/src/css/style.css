@@ -1,0 +1,321 @@
+@font-face {
+    font-family:zelda ;
+    src: url("./zelda.otf");
+}
+
+:root{
+    font-size: 80%;
+   /*  font-family: zelda; */
+    --verde:#007844;
+    --verclaro:#238158;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+
+body{
+    background-color: var(--verde);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.App{
+    border-radius: 2em;
+    box-shadow: 0 1em 3em rgba(0, 0, 0, 0.5);
+    width: 60vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    
+    background-color: #fff;
+    
+}
+.App .left{
+    background-color: var(--verclaro);
+    border-radius:2em 0 0 2em ;
+    width: 8em;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+}
+.App .left ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.App .left ul li{
+    height: 7em;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.App .left ul li:nth-child(1){
+    height: 1 0em;
+    border: none;
+}
+
+.App .left ul li:nth-child(5){
+    height: 10em;
+    background-color: #fff;
+}
+
+.App .left ul li:nth-child(6){
+    height: 10em;
+    background-color: orange;
+    border-radius: 0 0 0 2em;
+}
+
+.App .left ul li a{
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.App .left ul li a img{
+    width: 3em;
+    filter: invert(1);
+}
+
+.App .right{
+    position: relative;
+    border-radius: 0 2em 2em 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.App .right .rightTop{
+    border-radius: 0 2em 0 0;
+    height: 310px;
+    background-image: url("../../public/img/banner/5-58758_zelda-link-awakening-switch.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.App .right::before{
+    content: "";
+    position: absolute;
+    border-radius: 0 2em 0 0;
+    height: 43% ;
+    width: 100%;
+    background: radial-gradient(rgba(255,255,255,0.6),rgba(0,120,68,1));
+    
+}
+
+.App .right .rightTop .search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1em 0 0 1em;
+    padding: .6em;
+    width: 12em;
+    border: 1px solid #fff;
+    border-radius: 2em;
+    z-index: 4;
+}
+.App .right .rightTop .search input{
+    width: 9em;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.App .right .rightTop .search div img{
+    filter: invert(1);
+}
+
+.App .right .rightTop .bottonRight{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 4;
+}
+
+.App .right .rightTop .bottonRight .data{
+    display: flex;
+
+}
+
+.App .right .rightTop .bottonRight .data li{
+    margin: 0.2em 2em;
+}
+
+.App .right .rightTop .bottonRight .data li div{
+    align-items: center;
+    justify-content: center;
+}
+.App .right .rightTop .bottonRight .data li img{
+    filter: invert(1);
+    width: 20px;
+}
+
+.App .right .rightTop .bottonRight .social{
+    display: flex;
+
+}
+
+.App .right .rightTop .bottonRight .social li{
+    margin: 0.2em .5em ;
+}
+.App .right .rightTop .bottonRight .social li div{
+    align-items: center;
+    justify-content: center;
+}
+.App .right .rightTop .bottonRight .social li img{
+    filter: invert(1);
+    width: 20px;
+}
+
+.imgBox{
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+ 
+}
+
+
+
+.menu{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    left: 2.5em;
+    height: 390px;
+    width: 180px;
+    border-radius: 2em 2em 0 0;
+    z-index: 5;
+    background-color: #65ad8a;
+}
+
+.menu .topMenu{
+    background-image: url("../../public/img/banner/20190912030622-943x450.jpg");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 1em #000;
+    position: absolute;
+    top: -50px;
+    border: 3px solid #fff;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+
+.menu .containerMenu{
+    border-radius: 1em ;
+    box-shadow: 0 0.3em 2px rgba(0, 0, 0, 0.205);
+    border-bottom: 2px solid #c0c0c0;
+    background-color: #fff;
+    height: 250px;
+    padding: 0 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.menu .containerMenu h1{
+    color: #007844;
+    font-size: 3em;
+}
+
+.menu .containerMenu p{
+    color: #c0c0c0;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.menu .containerMenu .container .status{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+h3{
+    color: #007844;
+    text-align: center;
+}
+.menu .containerMenu .container .status div{
+    padding: 1em;
+}
+
+.App .right .rightBotton{
+    height: 410px;
+    width: 100%;
+    border-radius: 0 0 2em 0;
+    background-color: #eff3f1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.App .right .rightBotton section{
+    width: 60%;
+    padding: 1em;
+}
+
+.App .right .rightBotton .topRight{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.App .right .rightBotton .topRight .biografia{
+    background-color: #f0b341;
+    width: 150px;
+    height: 150px;
+    border-radius: 1em;
+    padding: 1em;
+    position: relative;
+}
+.App .right .rightBotton .topRight .biografia .bioTop{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.164);
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+}
+.App .right .rightBotton .topRight .biografia .bioTop img{
+    background-color: rgb(185, 117, 129);
+    margin: 0.2em;
+    border-radius: 0.8em;
+    filter: invert(1);
+
+}
+.App .right .rightBotton .topRight .biografia .bioTop p{
+    font-size: 1.2em;
+    font-weight: 600;
+    color: var(--verde);
+}
+
+.App .right .rightBotton .topRight .biografia p{
+    font-size: 0.8em;
+}
+
+.personZelda{
+    position: absolute;
+    bottom: 0;
+    right: -70px;
+    width: 100px;
+}
